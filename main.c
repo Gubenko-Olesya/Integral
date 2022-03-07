@@ -10,9 +10,10 @@ int main()//Gubenko Olesya 112
 	printf("Programma vichislyaet integral ot funcsii s zadannoi tochnostiu epsilon metodom trapetsiy.\n");
 	printf("Input a, b in section [a, b].\n");
 	scanf("%lf%lf", &a, &b);
-	s=integral(a,b,f);
-	real_s=df(b)-df(a);
-	printf("Integral with the use of the program: %lf,\nDelta: %lf.\n", s, fabs(real_s, s));
+	s=integral(a,b,d_f);
+	real_s=f(b)-f(a);
+	printf("Real integral: %lf,\n", real_s);
+	printf("Integral with the use of the program: %lf,\nDelta: %lf.\n", s, fabs(real_s-s));
 	return 0;
 }
 

@@ -1,8 +1,8 @@
 double integral(double a, double b, double(*f)(double x)); //Gubenko Olesya 112
-double fabs(double a, double b); //Gubenko Olesya 112
+double fabs(double a); //Gubenko Olesya 112
 double f(double x) { //Gubenko Olesya 112
-	return 4*x*x-18*x+10;
+	return x*x*x-10*x+3;
 }
-double df(double x) { //Gubenko Olesya 112
-	return 8*x-18;
+double d_f(double x) { //Gubenko Olesya 112
+	return 3*x*x-10;
 }
